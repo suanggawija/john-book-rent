@@ -1,6 +1,7 @@
 @extends('layouts')
-
+@section('title', 'Authors')
 @section('contain')
+<h1>Top 10 Most Famous Authoe</h1>
 <table border="1">
     <thead>
         <tr>

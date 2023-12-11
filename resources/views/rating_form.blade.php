@@ -1,6 +1,8 @@
 @extends('layouts')
-
+@section('title', 'Input Rating')
 @section('contain')
+<h1>Insert Rating Rating</h1>
+<div class="card">
     <form method="post" action="{{ route('store_rating') }}">
         @csrf
         <label for="author_id">Book Author :</label>
@@ -30,7 +32,8 @@
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
-
+        <br>
         <button type="submit">SUBMIT</button>
     </form>
+</div>
 @endsection

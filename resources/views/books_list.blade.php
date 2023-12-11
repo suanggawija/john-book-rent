@@ -1,6 +1,22 @@
 @extends('layouts')
-
+@section('title', 'Home')
 @section('contain')
+<h1>Books List</h1>
+<form action="">
+    @csrf
+    <label for="rate">Rating :</label>
+    <select name="rate" id="rate">
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+    </select>
+    <br>
+    <label for="search">Search : </label>
+    <input type="text" id="search" placeholder="search...">
+    <br>
+    <button type="submit">SUBMIT</button>
+</form>
 <table border="1">
     <thead>
         <tr>
